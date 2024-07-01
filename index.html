@@ -10,27 +10,33 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            color: #333;
         }
         .header {
-            background-color: #4CAF50;
+            background-color: #2241bd;
             color: white;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
         }
         h1 {
             margin-bottom: 40px;
             color: #333;
         }
         .certificado {
-            background: #fff;
+            background: #f7f7f7;
             padding: 20px;
             margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             transition: transform 0.2s;
         }
@@ -39,7 +45,7 @@
         }
         .certificado h2 {
             margin-top: 0;
-            color: #4CAF50;
+            color: #2241bd;
         }
         .certificado p {
             color: #555;
@@ -49,40 +55,49 @@
             margin-top: 10px;
             text-decoration: none;
             color: #fff;
-            background-color: #4CAF50;
+            background-color: #2241bd;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         .certificado a:hover {
-            background-color: #45a049;
+            background-color: #2241bd;
+        }
+        .certificado img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
         }
         footer {
             text-align: center;
             padding: 20px 0;
             background-color: #f1f1f1;
             margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Mis Certificados</h1>
+        <h1>Certificaciones</h1>
     </header>
     <div class="container">
         <div class="certificado">
-            <h2>Certificado en Ciencia de Datos con Python</h2>
-            <p>Aplicación de modelos de ML y manejo de grandes cantidades de datos.</p>
-            <a href="certificados/Alejandro Méndez Godoy Ciencia de Datos con Python.pdf" target="_blank">Ver Certificado</a>
+            <img src="https://via.placeholder.com/150" alt="Certificado 1">
+            <h2>Certificado en Ingenieria de datos con AWS</h2>
+            <p>Descripción breve del curso y de las habilidades adquiridas. Este curso abarca la planificación, ejecución y gestión de proyectos con un enfoque práctico.</p>
+            <a href="certificados/Alejandro Méndez Godoy Ingenieria de Datos con AWS.pdf" target="_blank">Ver Certificado</a>
         </div>
         <div class="certificado">
-            <h2>Certificado en Ingenieria de Datos con AWS</h2>
-            <p>AWS Management, EC2, loT Core, DataWerehouseing, NoSQL, RDS, MySQL, S3, IAM.</p>
-            <a href="certificados/Alejandro Méndez Godoy Ingenieria de Datos con AWS.pdf" target="_blank">Ver Certificado</a>
+            <img src="https://via.placeholder.com/150" alt="Certificado 2">
+            <h2>Certificado en Ciencia de Datos con Python</h2>
+            <p>Descripción breve del curso y de las habilidades adquiridas. Incluye análisis de datos, machine learning y visualización de datos.</p>
+            <a href="certificados/Alejandro Méndez Godoy Ciencia de Datos con Python.pdf" target="_blank">Ver Certificado</a>
         </div>
     </div>
     <footer>
-        <p>© 2024 Nombre Apellido. Todos los derechos reservados.</p>
+        <p>© 2024 Alejandro Méndez. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
