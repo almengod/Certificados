@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Certificados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
         .header {
-            background-color: #2241bd;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 20px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 40px;
         }
-        h1 {
-            margin-bottom: 40px;
+        h1, h2 {
             color: #333;
         }
         .certificado {
-            background: #f7f7f7;
+            display: flex;
+            align-items: center;
+            background: #f9f9f9;
             padding: 20px;
             margin: 20px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,31 +48,35 @@
         .certificado:hover {
             transform: translateY(-5px);
         }
+        .certificado img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .certificado-content {
+            flex: 1;
+        }
         .certificado h2 {
             margin-top: 0;
-            color: #2241bd;
+            color: #4CAF50;
         }
         .certificado p {
             color: #555;
+            margin: 0;
         }
         .certificado a {
             display: inline-block;
             margin-top: 10px;
             text-decoration: none;
             color: #fff;
-            background-color: #2241bd;
+            background-color: #4CAF50;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         .certificado a:hover {
-            background-color: #2241bd;
-        }
-        .certificado img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            background-color: #45a049;
         }
         footer {
             text-align: center;
@@ -76,24 +85,38 @@
             margin-top: 40px;
             box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
+        @media (max-width: 768px) {
+            .certificado {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .certificado img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>Certificaciones</h1>
+        <h1>Mis Certificados</h1>
     </header>
     <div class="container">
         <div class="certificado">
-            <img src="https://via.placeholder.com/150" alt="Certificado 1">
-            <h2>Certificado en Ingenieria de datos con AWS</h2>
-            <p>Descripción breve del curso y de las habilidades adquiridas. Este curso abarca la planificación, ejecución y gestión de proyectos con un enfoque práctico.</p>
-            <a href="certificados/Alejandro Méndez Godoy Ingenieria de Datos con AWS.pdf" target="_blank">Ver Certificado</a>
+            <img src="https://github.com/almengod/Certificados/blob/main/imagenes/Alejandro%20M%C3%A9ndez%20Godoy%20AWS.png" alt="Certificado 1">
+            <div class="certificado-content">
+                <h2>Certificado en Ingeniería de Datos con AWS</h2>
+                <p>AWS Management, EC2, loT Core, DataWerehouseing, NoSQL, RDS, MySQL, S3, IAM, etc.</p>
+                <a href="certificados/Alejandro Méndez Godoy Ingenieria de Datos con AWS.pdf" target="_blank">Ver Certificado</a>
+            </div>
         </div>
         <div class="certificado">
-            <img src="https://via.placeholder.com/150" alt="Certificado 2">
-            <h2>Certificado en Ciencia de Datos con Python</h2>
-            <p>Descripción breve del curso y de las habilidades adquiridas. Incluye análisis de datos, machine learning y visualización de datos.</p>
-            <a href="certificados/Alejandro Méndez Godoy Ciencia de Datos con Python.pdf" target="_blank">Ver Certificado</a>
+            <img src="https://github.com/almengod/Certificados/blob/main/imagenes/Alejandro%20M%C3%A9ndez%20Godoy%20CD.png" alt="Certificado 2">
+            <div class="certificado-content">
+                <h2>Especialización de Ciencia de Datos con Python</h2>
+                <p>Análisis de grandes volúmenes datos, machine learning y visualización de datos.</p>
+                <a href="certificados/Alejandro Méndez Godoy Ciencia de Datos con Python.pdf" target="_blank">Ver Certificado</a>
+            </div>
         </div>
     </div>
     <footer>
